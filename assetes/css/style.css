@@ -1,10 +1,27 @@
-p {
-    text-align: center;
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.body{
+    background-color: #223b54ff;
+    font-family: "Ubuntu", sans-serif;
+    justify-content: center;
 }
 
-h1 {
+p{
     text-align: center;
-    justify-content: center;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@keyframes h_anim{
+    0% {color: white;}
+    50% {color: #223b54ff;}
+    100% {color: white;}
+}
+
+.h1{
+    color: white;
+    text-align: center;
     padding-top: 100px;
+    animation: h_anim 4s infinite;
 }
